@@ -65,8 +65,8 @@
                 <h3>Matt's Home</h3>
                 <p>Tidy home</p>
               </div>
-              <img class="card-avatar" src="images/romain.jpeg">
-                <a href="#" class="card-link"></a>
+              <%= image_tag "romain.jpg", class: "card-avatar" %>
+              <%= link_to class: "card-link" %>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
@@ -76,8 +76,8 @@
                 <h3>Claire's Home</h3>
                 <p>Luxurious home</p>
               </div>
-              <img class="card-avatar" src="images/seb.jpg">
-                <a href="#" class="card-link"></a>
+              <%= image_tag "seb.jpg", class: "card-avatar" %>
+              <%= link_to class: "card-link" %>
             </div>
             <!-- insert <div class="card"> -->
           </div>
@@ -88,8 +88,8 @@
                 <h3>Alec's Home</h3>
                 <p>Charming home</p>
               </div>
-              <img class="card-avatar" src="images/anne.jpg">
-                <a href="#" class="card-link"></a>
+              <%= image_tag "anne.jpg", class: "card-avatar" %>
+              <%= link_to class: "card-link" %>
             </div>
             <!-- insert <div class="card"> -->
           </div>
@@ -114,7 +114,7 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
   <script type="text/javascript">
-  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+  var myLatlng = new google.maps.LatLng(48.86485, 2.37985);
 
   var myOptions = {
     zoom: 16,
@@ -269,28 +269,7 @@
   </script>
 
       <!-- Your footer code -->
-      <div class="footer">
-          <ul class="list-inline">
-            <li>
-              <a href>
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
 
-            <li>
-            <a href>
-              <i class="fa fa-linkedin"></i>
-            </a>
-            </li>
-
-            <li>
-            <a href>
-              <i class="fa fa-github"></i>
-            </a>
-            </li>
-          </ul>
-          <p>This is a text to take over the world</p>
-        </div>
 
       <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
