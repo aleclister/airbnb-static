@@ -1,112 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>AirBnB</title>
-</head>
-<body>
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/beach.jpg');">
+    <div class="banner-content">
+      <h1>Welcome Home</h1>
+      <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+      <form action="#" class="form-inline">
+        <input type="text" class="form-control input-lg" placeholder="check-in">
+        <input type="text" class="form-control input-lg" placeholder="check-out">
+        <select name id class="form-control input-lg">
+        <option value="1">1 person</option>
+        <option value="2">2 person</option>
+        <option value="3">3 person</option>
+        </select>
+        <input type="submit" class="btn btn-primary btn-lg" value="Search">
+      </form>
+    </div>
+  </div>
 
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/beach.jpg');">
-        <div class="banner-content">
-          <h1>Welcome Home</h1>
-          <p>Rent unique places to stay from local hosts in 190+ countries.</p>
-          <form action="#" class="form-inline">
-            <input type="text" class="form-control input-lg" placeholder="check-in">
-            <input type="text" class="form-control input-lg" placeholder="check-out">
-            <select name id class="form-control input-lg">
-            <option value="1">1 person</option>
-            <option value="2">2 person</option>
-            <option value="3">3 person</option>
-            </select>
-            <input type="submit" class="btn btn-primary btn-lg" value="Search">
-          </form>
-        </div>
-      </div>
+<!-- Your features code -->
+<div class="container text-center padded features">
+  <div class="row">
 
-      <!-- Your features code -->
-      <div class="container text-center padded features">
-        <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "globe.png" %>
+      <h3>Discover the world</h3>
+      <p>The earth is your new home.</p>
+    </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <%= image_tag "globe.png" %>
-            <h3>Discover the world</h3>
-            <p>The earth is your new home.</p>
-          </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "beer.png" %>
+      <h3>Meet people</h3>
+      <p>Discover new culture and lifestyle.</p>
+    </div>
 
-           <div class="col-xs-12 col-sm-6 col-md-3">
-            <%= image_tag "beer.png" %>
-            <h3>Meet people</h3>
-            <p>Discover new culture and lifestyle.</p>
-          </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "heart.png" %>
+      <h3>Share and love</h3>
+      <p>Join a community you will love.</p>
+    </div>
 
-           <div class="col-xs-12 col-sm-6 col-md-3">
-            <%= image_tag "heart.png" %>
-            <h3>Share and love</h3>
-            <p>Join a community you will love.</p>
-          </div>
-
-           <div class="col-xs-12 col-sm-6 col-md-3">
-            <%= image_tag "dollar.png" %>
-            <h3>Pay online</h3>
-            <p>No cash issues anymore.</p>
-          </div>
-        </div>
-      </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "dollar.png" %>
+      <h3>Pay online</h3>
+      <p>No cash issues anymore.</p>
+    </div>
+  </div>
+</div>
 
       <!-- Your cards code -->
-      <div class="wrapper-grey padded">
-      <div class="container">
-        <h2 class="text-center">Your next trip</h2>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-              <div class="card-category">Paris</div>
-              <div class="card-description">
-                <h3>Matt's Home</h3>
-                <p>Tidy home</p>
-              </div>
-              <%= image_tag "romain.jpg", class: "card-avatar" %>
-              <%= link_to class: "card-link" %>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-              <div class="card-category">Brussels</div>
-              <div class="card-description">
-                <h3>Claire's Home</h3>
-                <p>Luxurious home</p>
-              </div>
-              <%= image_tag "seb.jpg", class: "card-avatar" %>
-              <%= link_to class: "card-link" %>
-            </div>
-            <!-- insert <div class="card"> -->
-          </div>
-          <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-              <div class="card-category">London</div>
-              <div class="card-description">
-                <h3>Alec's Home</h3>
-                <p>Charming home</p>
-              </div>
-              <%= image_tag "anne.jpg", class: "card-avatar" %>
-              <%= link_to class: "card-link" %>
-            </div>
-            <!-- insert <div class="card"> -->
-          </div>
+<div class="wrapper-grey padded">
+<div class="container">
+  <h2 class="text-center">Your next trip</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+        <div class="card-category">Paris</div>
+        <div class="card-description">
+          <h3>Matt's Home</h3>
+          <p>Tidy home</p>
         </div>
+        <%= image_tag "romain.jpg", class: "card-avatar" %>
+        <%= link_to class: "card-link" %>
       </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+        <div class="card-category">Brussels</div>
+        <div class="card-description">
+          <h3>Claire's Home</h3>
+          <p>Luxurious home</p>
+        </div>
+        <%= image_tag "seb.jpg", class: "card-avatar" %>
+        <%= link_to class: "card-link" %>
       </div>
+      <!-- insert <div class="card"> -->
+    </div>
+    <div class="col-xs-12 col-sm-4">
+    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+        <div class="card-category">London</div>
+        <div class="card-description">
+          <h3>Alec's Home</h3>
+          <p>Charming home</p>
+        </div>
+        <%= image_tag "anne.jpg", class: "card-avatar" %>
+        <%= link_to class: "card-link" %>
+      </div>
+      <!-- insert <div class="card"> -->
+    </div>
+  </div>
+</div>
+</div>
 
       <!-- Your newsletter code -->
-      <div class="newsletter">
-        <h2>Get news from us!</h2>
-        <p>Leave us your mail and get news from us</p>
+<div class="newsletter">
+  <h2>Get news from us!</h2>
+  <p>Leave us your mail and get news from us</p>
 
-        <form class="form-inline">
-          <input type="email" id="your-email" placeholder="bob@gmail.com" class="form-control">
-          <input type="submit" value="Suscribe" class="btn btn-primary">
-        </form>
-      </div>
+  <form class="form-inline">
+    <input type="email" id="your-email" placeholder="bob@gmail.com" class="form-control">
+    <input type="submit" value="Suscribe" class="btn btn-primary">
+  </form>
+</div>
 
       <!-- Your map code -->
   <div id="map" style="width: 100%; height: 400px;"></div>
@@ -121,142 +113,7 @@
     center: myLatlng,
     scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles: [
-      {
-          "featureType": "all",
-          "elementType": "labels.text.fill",
-          "stylers": [
-              {
-                  "color": "#ffffff"
-              }
-          ]
-      },
-      {
-          "featureType": "all",
-          "elementType": "labels.text.stroke",
-          "stylers": [
-              {
-                  "color": "#000000"
-              },
-              {
-                  "lightness": 13
-              }
-          ]
-      },
-      {
-          "featureType": "administrative",
-          "elementType": "geometry.fill",
-          "stylers": [
-              {
-                  "color": "#000000"
-              }
-          ]
-      },
-      {
-          "featureType": "administrative",
-          "elementType": "geometry.stroke",
-          "stylers": [
-              {
-                  "color": "#144b53"
-              },
-              {
-                  "lightness": 14
-              },
-              {
-                  "weight": 1.4
-              }
-          ]
-      },
-      {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "color": "#08304b"
-              }
-          ]
-      },
-      {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [
-              {
-                  "color": "#0c4152"
-              },
-              {
-                  "lightness": 5
-              }
-          ]
-      },
-      {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [
-              {
-                  "color": "#000000"
-              }
-          ]
-      },
-      {
-          "featureType": "road.highway",
-          "elementType": "geometry.stroke",
-          "stylers": [
-              {
-                  "color": "#0b434f"
-              },
-              {
-                  "lightness": 25
-              }
-          ]
-      },
-      {
-          "featureType": "road.arterial",
-          "elementType": "geometry.fill",
-          "stylers": [
-              {
-                  "color": "#000000"
-              }
-          ]
-      },
-      {
-          "featureType": "road.arterial",
-          "elementType": "geometry.stroke",
-          "stylers": [
-              {
-                  "color": "#0b3d51"
-              },
-              {
-                  "lightness": 16
-              }
-          ]
-      },
-      {
-          "featureType": "road.local",
-          "elementType": "geometry",
-          "stylers": [
-              {
-                  "color": "#000000"
-              }
-          ]
-      },
-      {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "color": "#146474"
-              }
-          ]
-      },
-      {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "color": "#021019"
-              }
-          ]
-      }]
+    styles: []
    // TODO: replace [] by array from https://snazzymaps.com/
   };
 
@@ -269,11 +126,3 @@
   </script>
 
       <!-- Your footer code -->
-
-
-      <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-    </body>
-</html>

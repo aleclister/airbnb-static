@@ -4,15 +4,16 @@
  * ------------------------------------- */
 
 // General style
-$font-family-sans-serif:  $base-font;
+$font-family-sans-serif:  $my-font;
 $body-bg:                 white;
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
 $headings-font-family:    $header-font;
+@navbar-height: 45px;
 
 // Semantic color scheme
-$brand-primary:   $blue;
-$brand-success:   $green;
+$brand-primary:   $green;
+$brand-success:   $blue;
 $brand-info:      $yellow;
 $brand-danger:    $red;
 $brand-warning:   $orange;
@@ -21,3 +22,4 @@ $brand-warning:   $orange;
 $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
+@btn-font-weight: lighter;
