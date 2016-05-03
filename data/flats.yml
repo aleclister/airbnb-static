@@ -1,0 +1,38 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: "card-paris.jpg"
+  owner_picture: "seb.jpg"
+  name: Casa de Seb
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  rating: 2
+romain:
+  owner_name: Romain Paillard
+  picture: "card-london.jpeg"
+  owner_picture: "romain.jpg"
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  rating: 4
+anne:
+  owner_name: Anne Romanov
+  picture: "card-brussels.jpeg"
+  owner_picture: "anne.jpg"
+  name: Anne's kick ass house
+  summary: Manshion in brussels
+  city: brussels, Belgium
+  wifi: true
+  rating: 8
+# alec:
+#   owner_name: Alec Lister
+#   picture: "moon.jpg"
+#   owner_picture: "alec.jpg"
+#   name: Alec's amazing crib
+#   summary: Villa on the moon
+#   city: Moon, Space
+#   wifi: true
+#   satellite: true
+#   golf: true
+#   rating: 8
